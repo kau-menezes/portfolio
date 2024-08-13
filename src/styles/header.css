@@ -1,0 +1,105 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 10vh;
+    background: hsla(0, 0%, 100%, 1);
+    background: linear-gradient(90deg, transparent 2%, #130c32 90%);
+    background: -moz-linear-gradient(90deg, transparent 2%, hsla(251, 62%, 12%, 1) 40%);
+    background: -webkit-linear-gradient(90deg, transparent 2%, hsla(251, 62%, 12%, 1) 40%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFFFFF", endColorstr="#130C33", GradientType=1 );
+    color: aliceblue;
+
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+}
+nav {
+    margin-right: 40px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 2rem;
+    padding: 5%;
+
+}
+
+h4 {
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+li {
+    display: flex;
+    align-items: center;
+
+    position: relative;
+
+    list-style: none;
+    margin: 8px;
+
+    
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--light-purple);
+}
+
+.material-symbols-outlined.header {
+    color: var(--light-purple);
+
+}
+
+a:hover {
+    color: aliceblue;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.material-symbols-outlined.header:hover {
+    color: aliceblue;
+    cursor: pointer;
+
+}
+
+li::after {
+    content: '';
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    translate: -50% 0;
+
+    
+    width: 0;
+    background-color: aliceblue;
+    height: 2px;
+}
+
+li:hover::after {
+    width: 100%;
+    transition: 0.3s;
+}

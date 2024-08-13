@@ -1,0 +1,44 @@
+#technologies {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+h2 {
+    color: aliceblue;
+}
+
+#tech-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 2%;
+
+    
+}
+
+.tech-logo {
+    width: 100%;
+}
+
+.logo-border {
+    background-color: rgb(134, 113, 189);
+    padding: 10px;
+    width: 8%;
+    height: 25%;
+    max-height: 80px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.15s;
+}
+
+.logo-border:hover {
+    transform: scale(1.2);
+}

@@ -1,0 +1,34 @@
+#intro-info {
+    color: aliceblue;
+
+    max-width: fit-content;
+
+    position: relative;
+
+}
+
+#greetings {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#name-greetings {
+    color: var(--default-purple);
+    margin-left: 6px;
+}
+
+#specification-greetings {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    position: absolute;
+    width: 100%;
+}
+
+#gender {
+    font-weight: normal;
+    font-style: italic;
+}

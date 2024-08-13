@@ -1,0 +1,59 @@
+#projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    gap: 30px;
+}
+
+#projects-div {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    min-height: 90%;
+    flex: 1;
+}
+
+.project {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 15px;
+    min-width: 30%;
+    min-height: 60%;
+
+    color: aliceblue;
+    box-shadow: 0 1px 2px aliceblue, 
+                0 2px 4px aliceblue, 
+                0 4px 8px aliceblue,
+                0 8px 16px aliceblue;
+
+    position: relative;
+}
+
+.project > h3, p {
+    text-align: center;
+}
+
+.project > p {
+    font-weight: 200;
+    max-height: 50%;
+    position: absolute;
+    top: 45%;
+    bottom: 10%;
+    max-width: 80%;
+}
+
+.project > .material-symbols-outlined {
+    font-size: 2rem;
+}
+
+.project-link {
+    position: absolute;
+    top: 85%;
+    bottom: 0%;
+    max-width: 20px;
+}

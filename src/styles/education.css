@@ -1,0 +1,109 @@
+#education {
+    display: flex;
+    flex-direction: column;
+
+    height: 80vh;
+
+    color: aliceblue;
+
+    gap: 80px;
+}
+
+#time-line {
+    display: flex;
+    height: 100%;
+
+    gap: 30px;
+}
+
+#first, #second {
+    display: flex;
+    justify-content: space-between;
+
+    width: 95%;
+    background-color: rgba(134, 113, 189, 0.5);
+    height: 35%;
+    padding: 20px;
+
+    border: solid 2px var(--light-purple);
+
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+    0 2px 4px var(--light-purple), 
+    0 4px 8px var(--light-purple),
+    0 8px 16px var(--light-purple),
+    0 8px 32px var(--light-purple);
+
+    position: relative;
+    z-index: 0;
+}
+
+#second::after {
+    content: '';
+    width: 47px;
+    height: 2px;
+    background-color: aliceblue;
+    position: absolute;
+    z-index: 101;
+    right: 100%;
+    bottom: 50%;
+
+}
+
+hr {
+    z-index: 0;
+}
+
+#first::after {
+    content: '';
+    width: 47px;
+    height: 2px;
+    background-color: aliceblue;
+    position: absolute;
+    z-index: 109;
+    left: 100%;
+    bottom: 50%;
+
+}
+
+#unibrasil {
+    justify-content: flex-start;
+}
+
+#senai {
+    justify-content: flex-end;
+}
+
+.education-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+    max-height: 100%;
+}
+
+.education-info {
+    display: flex;
+    flex-direction: row;
+}
+
+#education-info {
+    min-width: 30%;
+    max-width: 50%;
+}
+
+#education-info >  h3 {
+    padding: 0;
+    width: 100%;
+}
+
+.course-info {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.education-img {
+    max-width: 200px;
+}

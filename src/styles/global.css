@@ -1,0 +1,33 @@
+:root {
+    --background-header: rgb(19, 12, 51);
+    --default-purple: rgba(77,44,159,1);
+    --light-purple: rgb(134, 113, 189);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgb(19,12,51);
+    background: linear-gradient(125deg, rgba(19,12,51,1) 25%, rgba(77,44,159,1) 100%);
+    /* background: linear-gradient(27deg, rgba(19,12,51,1) 10%, rgba(77,44,159,1) 30%, rgba(19,12,51,1) 73%, rgba(77,44,159,1) 100%); */
+
+
+}
+
+footer {
+    height: 1vh;
+    margin-top: 30px;
+}
+
+#footer {
+    background-color: var(--default-purple);
+    height: 100%;
+}
+
+.container-lg {
+    width: 95%;
+    max-width: 1200px;
+    margin: auto;
+}
